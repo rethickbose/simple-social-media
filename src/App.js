@@ -263,7 +263,7 @@ function App() {
               <div className="app__postsRight">
               
               <InstagramEmbed
-               url='https://www.instagram.com/p/Bey0LKWH1YL/?igshid=cyku9j0au2h1'
+               url=''
               maxWidth={320}
               hideCaption={false}
                containerTagName='div'
@@ -274,6 +274,15 @@ function App() {
               onAfterRender={() => {}}
               onFailure={() => {}}
               />
+
+              {user?.displayName ? (
+                  <ImageUpload username={user.displayName}/>
+
+                ):
+              (
+                <h3>Sorry you need to login</h3>
+                )}
+     
           
 
               </div>
@@ -286,14 +295,6 @@ function App() {
 
 
 
-        {user?.displayName ? (
-          <ImageUpload username={user.displayName}/>
-
-        ):
-        (
-          <h3>Sorry you need to login</h3>
-        )}
-     
 
           
     </div>
@@ -329,6 +330,17 @@ export default App;
     }
 
               
-              
+             
+    
+        {user?.displayName ? (
+          <ImageUpload username={user.displayName}/>
+
+        ):
+        (
+          <h3>Sorry you need to login</h3>
+        )}
+     
+
               
               */
+             

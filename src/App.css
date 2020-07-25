@@ -2,6 +2,14 @@
 margin: 0;
 }
 
+
+body{
+    background-image: url(./background.jpg);
+    background-attachment: fixed;
+    
+  }
+  
+
 .app_headerImage{
     object-fit: contain;
 }
@@ -9,6 +17,7 @@ margin: 0;
 .app{
     background-color: #fafafa;
     height: 100vh;
+    background-image: url("./background.jpg");
 }
 
 .app_signup{
@@ -42,4 +51,6 @@ justify-content: center;
 .app__postsRight{
 
     margin: 10px;
+    
+    
 }
