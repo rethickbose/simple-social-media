@@ -1,1 +1,1 @@
-https://instagram-clone-react.web.app
+https://instagram-clone-one.web.app
